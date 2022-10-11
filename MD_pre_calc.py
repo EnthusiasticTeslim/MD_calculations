@@ -59,12 +59,13 @@ def no_molecules_calc(L,B,H,mol_wt,ppm):
 
 print("******************************************************")
 print("Interactive tool for caclculating the number of molecules for specific ions: ")
-L = 8
-B = 13
-H = 12
-mol_wt = 23
-ppm = 18300
-ion_name = 'Na'
+import sys
+L = sys.argv[0] #8
+B = sys.argv[1] #13
+H = sys.argv[2] #12
+mol_wt = sys.argv[3] #23
+ppm = sys.argv[4] #18300
+ion_name = sys.argv[5] #'Na'
 
 molecules = round(no_molecules_calc(L,B,H,mol_wt,ppm),4)
 
